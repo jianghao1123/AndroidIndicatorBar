@@ -32,7 +32,7 @@ import android.widget.Scroller;
 
 
 /**
- * IndicatorBar is a slide for android Toobar
+ * IndicatorBar is a slide for android Toolbar
  * 
  * @author jh
  *
