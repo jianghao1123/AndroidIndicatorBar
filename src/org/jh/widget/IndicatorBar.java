@@ -72,10 +72,14 @@ public class IndicatorBar extends View implements IndictorSwitcher {
 				R.styleable.Indicator, defStyle, 0);
 
 		Drawable mDrawable = a.getDrawable(R.styleable.Indicator_android_src);
+		
+		if(mDrawable != null){
 
-		BitmapDrawable bd = (BitmapDrawable) mDrawable;
+			BitmapDrawable bd = (BitmapDrawable) mDrawable;
 
-		mBitmap = bd.getBitmap();
+			mBitmap = bd.getBitmap();
+			
+		}
 
 		mIndicNum = a.getInteger(R.styleable.Indicator_indicCount,
 				DEFAULT_INDIC_NUM);
